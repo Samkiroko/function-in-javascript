@@ -72,7 +72,7 @@ const greet = function (greeting) {
   };
 };
 
-const greetArr = greeting => {
+const greet = greeting => {
   return name => {
     console.log(`${greeting} ${name}`);
   };
@@ -81,4 +81,3 @@ const greetArr = greeting => {
 const greeterHey = greet('Hey');
 greeterHey('Jonas');
 greeterHey('Samuel');
-greetArr('hi', 'sam');

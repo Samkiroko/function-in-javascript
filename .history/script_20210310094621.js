@@ -71,14 +71,5 @@ const greet = function (greeting) {
     console.log(`${greeting} ${name}`);
   };
 };
-
-const greetArr = greeting => {
-  return name => {
-    console.log(`${greeting} ${name}`);
-  };
-};
-
 const greeterHey = greet('Hey');
 greeterHey('Jonas');
-greeterHey('Samuel');
-greetArr('hi', 'sam');
