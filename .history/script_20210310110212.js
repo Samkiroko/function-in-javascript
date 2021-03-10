@@ -167,7 +167,7 @@ console.log(addVAT(200));
 // arrow function
 
 const addTaxRate = rate => {
-  return value => value + value * rate;
+  value => value + value * rate;
 };
 
 const addVAT2 = addTaxRate(0.16);
