@@ -62,4 +62,3 @@ const transformer = function (str, fn) {
   console.log(`Transformed by: ${fn.name}`);
 };
 transformer('JavaScript is the best', upperFirstWord);
-transformer('JavaScript is the best', oneWord);
