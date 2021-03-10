@@ -261,16 +261,13 @@ const poll = {
       )
     );
     console.log(answer);
-
     // Register answer
     typeof answer === 'number' &&
       answer < this.answers.length &&
       this.answers[answer]++;
 
-    this.displayResults();
-    this.displayResults('string');
+    console.log(this.answers);
   },
-
   displayResults(type = 'array') {
     if (type === 'array') {
       console.log(this.answers);
@@ -281,10 +278,8 @@ const poll = {
   },
 };
 
+poll.registerNewAnswer();
+
 document
   .querySelector('.poll')
   .addEventListener('click', poll.registerNewAnswer.bind(poll));
-
-poll.displayResults.call({ answers: [5, 2, 3] }, 'string');
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] }, 'string');
-poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
