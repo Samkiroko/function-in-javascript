@@ -297,7 +297,7 @@ const runOnce = function () {
 
 runOnce();
 
-// rap it up to make it an expression. then we can call it immediately
+// rap it up to make it an expression
 (function () {
   console.log('This will never run again');
 })();
